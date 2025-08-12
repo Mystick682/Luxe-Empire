@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luxe Empire — Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <header class="bg-white sticky top-0 z-40 shadow-sm">
+      <div class="container mx-auto px-5 flex items-center justify-between h-16">
+        <a href="index.html" class="text-lg font-semibold">GroveLike</a>
+        <nav class="hidden md:flex gap-6 items-center">
+          <a href="shop.html" class="hover:underline">Shop</a>
+          <a href="about.html" class="hover:underline">About</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="cartBtn5" class="p-2">🛒 <span id="cartCount5" class="text-sm">0</span></button>
+          <button id="mobileBtn5" class="md:hidden p-2">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-5 py-12">
+      <h1 class="text-2xl font-semibold">Contact us</h1>
+      <form id="contactForm" class="mt-6 max-w-xl">
+        <label class="block">
+          <span class="text-sm">Name</span>
+          <input type="text" class="mt-1 block w-full rounded border px-3 py-2" required>
+        </label>
+        <label class="block mt-4">
+          <span class="text-sm">Email</span>
+          <input type="email" class="mt-1 block w-full rounded border px-3 py-2" required>
+        </label>
+        <label class="block mt-4">
+          <span class="text-sm">Message</span>
+          <textarea class="mt-1 block w-full rounded border px-3 py-2" rows="5" required></textarea>
+        </label>
+        <button class="mt-4 px-4 py-2 rounded bg-black text-white">Send</button>
+      </form>
+    </main>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

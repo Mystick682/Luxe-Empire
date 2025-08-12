@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grove-like — Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <header class="bg-white sticky top-0 z-40 shadow-sm">
+      <div class="container mx-auto px-5 flex items-center justify-between h-16">
+        <a href="index.html" class="text-lg font-semibold">GroveLike</a>
+        <nav class="hidden md:flex gap-6 items-center">
+          <a href="shop.html" class="hover:underline">Shop</a>
+          <a href="about.html" class="hover:underline">About</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button id="cartBtn3" class="p-2">🛒 <span id="cartCount3" class="text-sm">0</span></button>
+          <button id="mobileBtn3" class="md:hidden p-2">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-5 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <img id="productImage" src="https://images.unsplash.com/photo-1526178618898-7f5b33f0b2b6?auto=format&fit=crop&w=1000&q=80" alt="product" class="w-full rounded-lg shadow">
+        </div>
+        <div>
+          <h1 id="productTitle" class="text-2xl font-semibold">Elegant Necklace</h1>
+          <p id="productPrice" class="text-xl text-gray-700 mt-2">$120</p>
+          <p class="mt-4 text-gray-600">A beautiful piece with timeless appeal. High-quality metals and crafted by artisans.</p>
+
+          <div class="mt-6 flex items-center gap-3">
+            <input id="qty" type="number" min="1" value="1" class="w-20 px-3 py-2 border rounded">
+            <button id="addToCartBtn" class="px-5 py-3 bg-black text-white rounded">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

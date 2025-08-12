@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luxe Empire — Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-40 shadow-sm" data-aos="fade-down">
+      <div class="container mx-auto px-5 flex items-center justify-between h-16">
+        <a href="index.html" class="text-lg font-semibold">Luxe Empire</a>
+
+        <nav class="hidden md:flex gap-6 items-center">
+          <a href="shop.html" class="hover:underline">Shop</a>
+          <a href="about.html" class="hover:underline">About</a>
+          <a href="contact.html" class="hover:underline">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button id="cartBtn" class="p-2">🛒 <span id="cartCount" class="text-sm">0</span></button>
+          <button id="mobileBtn" class="md:hidden p-2">☰</button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+        <div class="px-5 py-4 flex flex-col gap-3">
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+  class="container mx-auto px-5 py-16 grid md:grid-cols-2 gap-10 items-center relative text-white"
+  style="background-image: url('assets/homepic.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+  data-aos="fade-up"
+>
+  <!-- Optional: Overlay to darken background for text readability -->
+  <div class="absolute inset-0 bg-black opacity-40"></div>
+
+  <div class="relative z-10">
+    <h1 class="text-4xl md:text-5xl font-bold">Elegant pieces — crafted for life</h1>
+    <p class="mt-4 text-lg max-w-xl">
+      Minimal, refined, and built to last. Explore curated collections inspired by timeless design.
+    </p>
+    <div class="mt-6 flex gap-3">
+      <a href="shop.html" class="px-6 py-3 rounded-md bg-white text-black font-semibold hover:bg-gray-200 transition">
+        Shop now
+      </a>
+      <a href="about.html" class="px-6 py-3 rounded-md border border-white hover:bg-white hover:text-black transition">
+        Our story
+      </a>
+    </div>
+  </div>
+
+  <div class="relative z-10" data-aos="zoom-in">
+    <!-- You can keep the image or remove this div since background is set -->
+    <img
+      src="assets/homepic.jpg"
+      alt="hero"
+      class="w-full rounded-lg shadow-lg object-cover max-h-96 hidden md:block"
+    />
+  </div>
+</section>
+
+
+   
+  <!-- New Arrivals Horizontal Snap Carousel -->
+<section class="py-16 bg-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="zoom-in">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900">New Arrivals</h2>
+      <p class="mt-2 text-lg text-gray-600">Freshly added products you’ll love</p>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth flex gap-6 px-[25%]">
+      
+      <!-- Repeat for 15 Products -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/w.jpg" alt="Product 1" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 1</h3>
+          <p class="mt-2 text-gray-600">$45.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/yves-saint-laurent-black-opium.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/k.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/e.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/l.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/r.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/hugo-boss-boss-bottled-night.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/q.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/gucci-guilty-essence-pour-homme.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/dior-sauvage.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/chanel-bleu-de-chanel.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/m.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/1.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/a.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Product Name 2</h3>
+          <p class="mt-2 text-gray-600">$55.00</p>
+        </div>
+      </div>
+
+      <!-- Duplicate until you have 15 -->
+
+    </div>
+  </div>
+</section>
+
+<!-- Hide Scrollbar -->
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+
+<!-- Animation Script -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("opacity-100", "translate-y-0");
+        entry.target.classList.remove("opacity-0", "translate-y-10");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  elements.forEach(el => {
+    el.classList.add("opacity-0", "translate-y-10", "transition-all", "duration-700");
+    observer.observe(el);
+  });
+});
+</script>
+
+
+    <!-- Featured products -->
+    <section 
+  class="py-12 bg-cover bg-center" 
+  style="background-image: url('assets/features.jpg');" 
+  data-aos="fade-up"
+>
+  <section id="featured-section" class="container mx-auto px-5 py-12 bg-white bg-opacity-70 rounded-lg shadow-lg">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Featured Brands</h2>
+      <p class="mt-2 text-lg text-gray-600">Freshly added products you’ll love</p>
+    </div>
+    
+    <!-- Horizontal scroll container -->
+    <div class="flex overflow-x-auto space-x-6 snap-x snap-mandatory scrollbar-hide px-2">
+      <!-- Product cards (7) -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/feat.jpg" alt="Product 1" class="w-full h-64 object-cover rounded-t-lg" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Muskan</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/feat2.jpg" alt="Product 2" class="w-full h-64 object-cover rounded-t-lg" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Dolce & Gabbana</h3>
+        </div>
+      </div>
+
+      <!-- Repeat for other products -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/fear3.jpg" alt="Product 3" class="w-full h-64 object-cover rounded-t-lg" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Chanel</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/feat4.jpg" alt="Product 4" class="w-full h-64 object-cover rounded-t-lg" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Lacoste</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/feat5.jpg" alt="Product 5" class="w-full h-64 object-cover rounded-t-lg" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Victoria's Secret</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/feat6.jpg" alt="Product 6" class="w-full h-64 object-cover rounded-t-lg" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Adidas</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 snap-center flex-shrink-0 w-[300px]">
+        <img src="assets/feat7.jpg" alt="Product 7" class="w-full h-64 object-cover rounded-t-lg" />
+        <div class="p-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-900">Elegant</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+    <!-- Video Section -->
+<section class="py-12 bg-gray-200" data-aos="fade-up">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Watch Our Story</h2>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe 
+        class="w-full h-full rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="Brand Story"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+    <!-- Promo grid -->
+    <section class="py-12" data-aos="fade-up">
+      <div class="container mx-auto px-5 grid md:grid-cols-3 gap-6">
+        <div class="rounded overflow-hidden shadow-sm" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80" alt="promo1" class="w-full h-64 object-cover">
+        </div>
+        <div class="rounded overflow-hidden shadow-sm" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1505740106531-4243f3831f2b?auto=format&fit=crop&w=1200&q=80" alt="promo2" class="w-full h-64 object-cover">
+        </div>
+        <div class="rounded overflow-hidden shadow-sm" data-aos="zoom-in" data-aos-delay="400">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="promo3" class="w-full h-64 object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+<section class="py-12 bg-gray-200" data-aos="fade-up" id="stats">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Stats</h2>
+    <div class="container mx-auto px-4 text-center">
+    <div class="aspect-w-16 aspect-h-9">
+    <div>
+      <div class="stat" data-target="8">0</div>
+      <div class="text-sm text-gray-500">Years of experience</div>
+    </div>
+    <div>
+      <div class="stat" data-target="15000">0</div>
+      <div class="text-sm text-gray-500">Successful transactions</div>
+    </div>
+    <div>
+      <div class="stat" data-target="14996">0</div>
+      <div class="text-sm text-gray-500">Happy clients</div>
+    </div>
+    <div>
+      <div class="stat" data-target="10">0</div>
+      <div class="text-sm text-gray-500">Brand awards</div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Newsletter -->
+    <section class="bg-gray-900 text-white py-12" data-aos="fade-up">
+      <div class="container mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-xl font-semibold">Join the list</h3>
+          <p class="text-gray-300 mt-2">Get early access to new drops and curated stories.</p>
+        </div>
+        <form id="newsletterForm" class="flex gap-3 w-full md:w-auto">
+          <input type="email" placeholder="Your email" class="px-4 py-2 rounded-md text-gray-900" required>
+          <button class="px-4 py-2 rounded-md bg-white text-black">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+<footer class="bg-white mt-12 border-t" data-aos="fade-up">
+  <div class="container mx-auto px-5 py-12 text-sm text-gray-600">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Brand -->
+      <div>
+        <a href="index.html" class="font-semibold text-lg">GroveLike</a>
+        <p class="mt-2">Designed with care.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="about.html" class="hover:text-gray-900">About</a></li>
+          <li><a href="contact.html" class="hover:text-gray-900">Contact</a></li>
+          <li><a href="warranty.html" class="hover:text-gray-900">Warranty Policy</a></li>
+          <li><a href="terms.html" class="hover:text-gray-900">Terms & Conditions</a></li>
+          <li><a href="privacy.html" class="hover:text-gray-900">Privacy</a></li>
+          <li><a href="returns.html" class="hover:text-gray-900">Returns</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="font-semibold mb-3">Follow Us</h3>
+        <div class="flex gap-4">
+          <a href="#" aria-label="Facebook" class="hover:text-gray-900">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.5V12H18l-.5 3h-3v7A10 10 0 0 0 22 12z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-gray-900">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-3a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter X" class="hover:text-gray-900">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.307l-7.227 8.26L22 21.75h-6.407l-5.012-6.56-5.744 6.56H1.531l7.73-8.832L2 2.25h6.594l4.498 5.934 5.152-5.934z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok" class="hover:text-gray-900">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.6 2h3.1c.3 2 1.6 3.6 3.5 4.3v3.1c-1.3-.1-2.6-.5-3.8-1.1v7.2c0 3-2.4 5.5-5.5 5.5S4.5 18.5 4.5 15.5s2.4-5.5 5.5-5.5c.5 0 1 .1 1.5.2V6.3c-.5-.1-1-.1-1.5-.1-4 0-7.3 3.2-7.3 7.3s3.2 7.3 7.3 7.3 7.3-3.2 7.3-7.3V2z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Threads" class="hover:text-gray-900">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2a10 10 0 1 0 10 10c0-5.5-4.5-10-10-10zm0 18.3a8.3 8.3 0 1 1 8.3-8.3 8.3 8.3 0 0 1-8.3 8.3z"/><path d="M13.4 10.1c-.3-.2-.7-.3-1.1-.3-1.1 0-2 .9-2 2s.9 2 2 2c.5 0 .9-.2 1.2-.5.1.5.1 1 .1 1.5 0 1.7-1.2 3.2-2.9 3.5-1.9.4-3.7-.9-4.1-2.8-.4-1.8.7-3.5 2.5-4 .4-.1.7-.2 1.1-.2h1.1V8.4h-.5c-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6 5.6-2.5 5.6-5.6c0-.9-.2-1.8-.5-2.6-.5-1.1-1.4-2-2.5-2.3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="mt-8 text-center text-xs text-gray-500">
+      &copy; 2025 Luxe Empire. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+
+    <script src="assets/script.js"></script>
+<script>
+   // Minimal JS for demo: products, filters, cart, mobile menu
+const PRODUCTS = [
+  {id:1,title:'Elegant Necklace',price:120,category:'necklaces',img:'https://images.unsplash.com/photo-1526178618898-7f5b33f0b2b6?auto=format&fit=crop&w=800&q=80'},
+  {id:2,title:'Classic Ring',price:80,category:'rings',img:'https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?auto=format&fit=crop&w=800&q=80'},
+  {id:3,title:'Minimal Earrings',price:60,category:'earrings',img:'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80'},
+  {id:4,title:'Gold Pendant',price:150,category:'necklaces',img:'https://images.unsplash.com/photo-1526318472351-c75fcf0700b7?auto=format&fit=crop&w=800&q=80'},
+  {id:5,title:'Signet Ring',price:95,category:'rings',img:'https://images.unsplash.com/photo-1600180758890-0b7c5b1f7c4f?auto=format&fit=crop&w=800&q=80'},
+  {id:6,title:'Hoop Earrings',price:45,category:'earrings',img:'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=800&q=80'},
+  {id:7,title:'Layered Necklace',price:140,category:'necklaces',img:'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80'},
+  {id:8,title:'Band Ring',price:70,category:'rings',img:'https://images.unsplash.com/photo-1508624896493-2c8fa1f716f9?auto=format&fit=crop&w=800&q=80'}
+];
+
+// Utilities
+function q(sel, ctx=document){return ctx.querySelector(sel)}
+function qAll(sel, ctx=document){return Array.from(ctx.querySelectorAll(sel))}
+
+// Mobile menu
+qAll('#mobileBtn, #mobileBtn2, #mobileBtn3, #mobileBtn4, #mobileBtn5').forEach(btn=>{
+  btn?.addEventListener('click', ()=>{
+    const menu = document.getElementById('mobileMenu');
+    if(menu) menu.classList.toggle('hidden');
+  })
+});
+
+// Render products in featured and shop
+function renderProducts(gridEl, items){
+  gridEl.innerHTML = items.map(p=>`
+    <div class="product-card bg-white rounded-lg p-3 shadow-sm">
+        <div class="aspect-1 rounded overflow-hidden">
+          <img src="${p.img}" alt="${p.title}">
+        </div>
+        <h3 class="mt-3 text-sm font-medium">${p.title}</h3>
+        <div class="mt-1 text-sm text-gray-600">$${p.price}</div>
+      </a>
+      <div class="mt-3">
+        <button class="addBtn px-3 py-2 bg-black text-white text-sm rounded" data-id="${p.id}">Add</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Populate featured grid (first 4)
+const pruductgrid = document.getElementById('pruductgrid');
+if(pruductgrid) renderProducts(pruductgrid, PRODUCTS.slice(0,4));
+
+// Populate featured grid (first 4)
+const featuredGrid = document.getElementById('featuredGrid');
+if(featuredGrid) renderProducts(featuredGrid, PRODUCTS.slice(0,4));
+
+
+// Populate shop grid
+const shopGrid = document.getElementById('shopGrid');
+if(shopGrid) renderProducts(shopGrid, PRODUCTS);
+
+// Filter buttons
+qAll('.filterBtn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const f = btn.dataset.filter;
+    const items = f === 'all' ? PRODUCTS : PRODUCTS.filter(p=>p.category===f);
+    if(shopGrid) renderProducts(shopGrid, items);
+  })
+});
+
+// Cart - simple localStorage persistence
+function getCart(){return JSON.parse(localStorage.getItem('cart||demo')||'[]')}
+function saveCart(c){localStorage.setItem('cart||demo', JSON.stringify(c)); updateCartCount();}
+function addToCart(id, qty=1){
+  const p = PRODUCTS.find(x=>x.id==id); if(!p) return;
+  const c = getCart();
+  const existing = c.find(i=>i.id==id);
+  if(existing) existing.qty += qty; else c.push({id:p.id,title:p.title,price:p.price,qty});
+  saveCart(c);
+}
+</script>
+
+<script>
+  function countUp(el, target, duration) {
+    let start = 0;
+    let increment = target / (duration / 16); // ~60fps
+    let timer = setInterval(() => {
+      start += increment;
+      if (start >= target) {
+        start = target;
+        clearInterval(timer);
+      }
+      el.textContent = Math.floor(start);
+    }, 16);
+  }
+
+  // Start when in view
+  const statsSection = document.querySelector("#stats");
+  const stats = document.querySelectorAll(".stat");
+  let started = false;
+
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !started) {
+      started = true;
+      stats.forEach(stat => {
+        const target = parseInt(stat.getAttribute("data-target"));
+        countUp(stat, target, 1500); // 1.5s animation
+      });
+    }
+  }, { threshold: 0.3 });
+
+  observer.observe(statsSection);
+</script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+  
+  
